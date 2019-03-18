@@ -10,22 +10,20 @@
     tools:showIn="@layout/activity_edit_game">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <android.support.v7.widget.CardView
             android:id="@+id/cardViewEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="2dp"
-            card_view:contentPadding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:contentPadding="16dp"
             tools:ignore="MissingConstraints">
 
 
@@ -44,7 +42,14 @@
                     android:id="@+id/titleInput"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:hint="Title"
                     android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Platform" />
 
                 <EditText
                     android:id="@+id/platformInput"
